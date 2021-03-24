@@ -35,4 +35,23 @@ db.serialize(function() {
       console.log(`Created vax_data table`);
     }
   });
+
+  let seed_stmt = db.prepare(`INSERT INTO vax_data(row_id,zip_code,vax_date,first_dose,full_series) VALUES (?,?,?,?,?)`);
+  // row_id
+  // zip_code
+  // date
+  // _1st_dose_daily
+  // vaccine_series_completed_daily
+  for (let d of seed_data) {
+    seed_stmt.run(d.row_id,d.zip_code,d.date,d._1st_dose_daily,d.vaccine_series_completed_daily);
+  }
+  seed_stmt.finalize();
+
+  db.each("SELECT first_dose FROM vax_data", function(err,row) {
+    if (err) {
+      console.error(err.message);
+    } else {
+      console.log("First dose:", row.first_dose);
+    }
+  });
 });
