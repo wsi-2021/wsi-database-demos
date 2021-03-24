@@ -1,0 +1,11 @@
+{
+  "name": "wsi-database-demos",
+  "version": "0.0.0",
+  "description": "Quick SQL and NoSQL connection and setup demos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karl Stolley <kstolley@iit.edu>",
+  "license": "ISC"
+}
