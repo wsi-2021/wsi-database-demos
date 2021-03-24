@@ -4,7 +4,8 @@
   "description": "Quick SQL and NoSQL connection and setup demos.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sql:setup": "node db/sqlite/setup.js"
   },
   "author": "Karl Stolley <kstolley@iit.edu>",
   "license": "ISC",
