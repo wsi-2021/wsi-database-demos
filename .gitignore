@@ -1,1 +1,4 @@
 *.sqlite3
+*.log
+db/mongo/var/mongodb/*
+!db/mongo/var/mongodb/.keep
