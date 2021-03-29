@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo:start": "mongod --config db/mongo/mongod.conf",
+    "mongo:setup": "node db/mongo/setup.js",
     "sql:setup": "node db/sqlite/setup.js"
   },
   "author": "Karl Stolley <kstolley@iit.edu>",
