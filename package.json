@@ -10,6 +10,7 @@
   "author": "Karl Stolley <kstolley@iit.edu>",
   "license": "ISC",
   "dependencies": {
+    "mongodb": "^3.6.5",
     "sqlite3": "^5.0.2"
   }
 }
